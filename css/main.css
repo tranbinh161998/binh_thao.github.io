@@ -3,6 +3,26 @@
     display: flex;
 }
 
+.date {
+ display:block;
+ margin-bottom:20px;
+ font-size:13px;
+ text-transform:uppercase;
+ letter-spacing:2px
+}
+.date span {
+ display:block;
+ font-size:13px;
+ text-transform:uppercase;
+ letter-spacing:2px
+}
+.desc {
+ padding:2em;
+ border:1px solid rgba(0,0,0,.05);
+ position:relative;
+ z-index:0;
+}
+
 @media only screen and (min-width: 992px) {
     .h-flex-md {
         display: -ms-flexbox;
@@ -26,6 +46,13 @@
     font-weight: normal;
     font-style: normal;
 }
+
+/* @font-face {
+    font-family: 'Dancing Script';
+    src: url("../fonts/DancingScript-VariableFont_wght.ttf") format("woff");
+    font-weight: normal;
+    font-style: normal;
+} */
 
 /* Typography */
 
@@ -52,7 +79,8 @@ h2 {
 }
 
 h3 {
-    font-size: 30px;
+    font-size: 40px;
+    font-family: "Clicker Script", cursive;
 }
 
 a {
@@ -93,7 +121,7 @@ p {
 /* Body */
 
 body {
-    font-family: "Open Sans", sans-serif;
+    font-family: "Nunito", Arial, sans-serif;
     font-weight: 300;
     font-size: 16px;
     line-height: 1.7;
@@ -302,7 +330,7 @@ ol ol {
     font-size: 16px;
     line-height: 1.5;
     margin: 30px;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Source Sans Pro", sans-serif;
 }
 
 @media only screen and (min-width: 768px) {
@@ -920,7 +948,11 @@ img {
 /* Events */
 
 .events-accordion h3 {
-    font-size: 20px;
+    /* font-size: 30px; */
+    font-size:40px;
+    color:#ff847c;
+    display:block;
+    margin-bottom:40px
 }
 
 .events-accordion #accordion-img {
@@ -1717,7 +1749,7 @@ footer .copyright .block {
 /* Buttons */
 
 .btn {
-    font-family: "Open Sans", sans-serif;
+    font-family: "Source Sans Pro", sans-serif;
     font-size: 16px;
     font-weight: 400;
     padding: 8px 20px;
@@ -2395,5 +2427,3 @@ footer .copyright .block {
         border-right-width: 0;
     }
 }
-
-/*# sourceMappingURL=main.css.map */
