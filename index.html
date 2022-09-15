@@ -137,7 +137,7 @@
                         <div class="desc-bride">
                             <h3 style="font-family: 'Dancing Script', cursive; font-size: 30px;">Nguyễn Thị Phương</h3>
                             <p>28-01-1995</p>
-                            <p>Cô thôn nữ tại vùng đất tổ</p>
+                            <p>Cô gái tại vùng đất tổ</p>
                             <a href="https://me.momo.vn/WEINuKF7FkT8I6iNfEug" target="_blank"
                                 rel="noopener noreferrer me" title="Momo"><img src="img/logo-momo-png-1.png"
                                     width="40"></a>
@@ -380,63 +380,8 @@
                 </div>
                 <div class="row">
                     <div class="col-sm-12">
-                        <div class="grid grid--margin">
+                        <div class="grid grid--margin" id="album">
                             <div class="grid-sizer"></div>
-                            <div class="grid-item grid-item--width moments friends">
-                                <a href="img/gallery-1.jpg" data-lightbox="roadtrip">
-                                    <img loading="lazy" src="img/gallery-1.jpg" alt="gallery">
-                                </a>
-                            </div>
-                            <div class="grid-item moments banguet party">
-                                <a href="img/gallery-2.jpg" data-lightbox="roadtrip">
-                                    <img loading="lazy" src="img/gallery-2.jpg" alt="gallery">
-                                </a>
-                            </div>
-                            <div class="grid-item friends moments party">
-                                <a href="img/gallery-3.jpg" data-lightbox="roadtrip">
-                                    <img loading="lazy" src="img/gallery-3.jpg" alt="gallery">
-                                </a>
-                            </div>
-                            <div class="grid-item banguet family">
-                                <a href="img/gallery-4.jpg" data-lightbox="roadtrip">
-                                    <img loading="lazy" src="img/gallery-4.jpg" alt="gallery">
-                                </a>
-                            </div>
-                            <div class="grid-item friends family">
-                                <a href="img/gallery-5.jpg" data-lightbox="roadtrip">
-                                    <img loading="lazy" src="img/gallery-5.jpg" alt="gallery">
-                                </a>
-                            </div>
-                            <div class="grid-item family party">
-                                <a href="img/gallery-6.jpg" data-lightbox="roadtrip">
-                                    <img loading="lazy" src="img/gallery-6.jpg" alt="gallery">
-                                </a>
-                            </div>
-                            <div class="grid-item moments family">
-                                <a href="img/gallery-7.jpg" data-lightbox="roadtrip">
-                                    <img loading="lazy" src="img/gallery-7.jpg" alt="gallery">
-                                </a>
-                            </div>
-                            <div class="grid-item banguet family">
-                                <a href="img/gallery-8.jpg" data-lightbox="roadtrip">
-                                    <img loading="lazy" src="img/gallery-8.jpg" alt="gallery">
-                                </a>
-                            </div>
-                            <div class="grid-item friends party">
-                                <a href="img/gallery-9.jpg" data-lightbox="roadtrip">
-                                    <img loading="lazy" src="img/gallery-9.jpg" alt="gallery">
-                                </a>
-                            </div>
-                            <div class="grid-item friends party">
-                                <a href="img/gallery-10.jpg" data-lightbox="roadtrip">
-                                    <img loading="lazy" src="img/gallery-10.jpg" alt="gallery">
-                                </a>
-                            </div>
-                            <div class="grid-item friends party">
-                                <a href="img/gallery-11.jpg" data-lightbox="roadtrip">
-                                    <img loading="lazy" src="img/gallery-11.jpg" alt="gallery">
-                                </a>
-                            </div>
                         </div>
                         <div class="text-center">
                             <a href="album.html" class="btn btn-default">Xem thêm</a>
@@ -467,12 +412,20 @@
             </div>
         </section>
     </div>
+    <!-- Load album -->
+    <script>
+        for (let i = 2;i < 11; i++){
+            html = `<div class="grid-item grid-item--width">
+                <a href="img/gallery-${i}.jpg" data-lightbox="roadtrip" style="width:100%; display:block;">
+                    <img loading="lazy" src="img/gallery-${i}-thumbnail.jpg" alt="gallery" style="width:100%">
+                </a>
+            </div>`;
+            document.getElementById("album").innerHTML += html;
+        }
+    </script>
+
     <!-- Modernizr JS -->
     <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-    <!-- FOR IE9 below -->
-    <!--[if lt IE 9]>
-	<script src="js/vendor/respond.min.js"></script>
-	<![endif]-->
     <!-- jQuery -->
     <script src="js/vendor/jquery.min.js"></script>
     <!-- jQuery Easing -->
