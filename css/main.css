@@ -1563,6 +1563,7 @@ img {
 
 .banner_top {
     background-image: url(../img/header-bg.jpg);
+    background-position: center top;
 }
 
 .banner_bottom {
